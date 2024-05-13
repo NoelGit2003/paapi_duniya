@@ -1,0 +1,201 @@
+/* Universal */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    /* --bg-color: #e9f7ff; */
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --main-color: #f0f0f0;
+    --other-color: #ffc633;
+    --second-color: #616060;
+
+    /* --h1-font: 5.5rem;
+    --h2-font: 3.5rem;
+    --p-font: 1rem; */
+
+    --h1-font: 2.5vw;
+    --h2-font: 1.7vw;
+    --p-font: 1vw;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    background: var(--bg-color);
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 5%);
+    padding: 0.7rem 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.6s;
+}
+
+.logo {
+    width: 4vw;
+    position: relative;
+    border-radius: 0.6rem;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    transition: all 0.6s;
+}
+
+.navlist a:hover {
+    transform: translateY(-4px);
+    color: var(--second-color);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    width: 2vw;
+}
+
+.nav-right a {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 0 0.7rem;
+    transition: all 0.6s;
+}
+
+.nav-right a:hover {
+    transform: translateY(-5px) scale(1.1)
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 101;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Home */
+
+section {
+    padding: 90px 14% 70px;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: var(--main-color);
+    /* background-size: 25rem; */
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-text {
+    padding-top: 60px;
+}
+
+.home img{
+    max-width: 25vw;
+    position: relative;
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.home-text h6 {
+    font-size: 0.9vw;
+    font-weight: 500;
+    color: var(--second-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.home-text p {
+    width: 100%;
+    max-width: 560px;
+    font-size: var(--p-font);
+    font-weight: 400;
+    color: var(--second-color);
+    line-height: 1.6em;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7em 2em;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: all 0.6s;
+}
+
+.btn:hover {
+    transform: scale(0.9) translateY(-6px);
+    border: 2px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+}
+
+.btn i {
+    margin-left: 9px;
+}
+
+
+
+
+/* Discount */
+.discount{
+    padding: 1rem 14%;
+    background-color: var(--text-color);
+}
+
+.d-banner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.d-banner h1{
+    color: white;
+    font-size: 2vw;
+}
+
+.banner img{
+    max-width: 5vw;
+}
+
