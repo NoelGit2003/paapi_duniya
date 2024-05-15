@@ -74,6 +74,9 @@ header {
 .nav-right {
     display: flex;
     align-items: center;
+}
+
+.nav-right a {
     width: 2vw;
 }
 
@@ -99,6 +102,8 @@ header {
 }
 
 
+
+
 /* Home */
 
 section {
@@ -121,7 +126,7 @@ section {
     padding-top: 60px;
 }
 
-.home img{
+.home img {
     max-width: 25vw;
     position: relative;
 }
@@ -176,26 +181,102 @@ section {
 
 
 
-
 /* Discount */
-.discount{
+.discount {
     padding: 1rem 14%;
     background-color: var(--text-color);
 }
 
-.d-banner{
+.d-banner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
 
-.d-banner h1{
+.d-banner h1 {
     color: white;
     font-size: 2vw;
 }
 
-.banner img{
+.banner img {
     max-width: 5vw;
 }
 
+
+
+/* Adjustments for smaller screens (up to 768px width) */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0.7rem 6%;
+    }
+
+    .logo {
+        width: 8%;
+    }
+
+    .navlist {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navlist a {
+        margin: 0 1%;
+        font-size: 2vw;
+    }
+
+    .nav-right a {
+        display: inline-block;
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .home {
+        padding: 10% 5% 5%;
+        height: 70vh;
+        gap: 0.8rem;
+    }
+
+    .home img {
+        max-width: 10rem;
+    }
+
+    .home-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-text h6 {
+        font-size: 0.6rem;
+    }
+
+    .home-text p {
+        font-size: 0.6rem;
+    }
+
+    .btn {
+        padding: 1vw 2vw;
+
+        font-size: 1.5vw;
+
+        border-width: 0.3em;
+
+    }
+
+    .d-banner {
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .banner {
+        width: 3rem;
+    }
+
+    .d-banner h1 {
+        font-size: 1em;
+    }
+
+    .banner img {
+        max-width: 100%;
+    }
+}
